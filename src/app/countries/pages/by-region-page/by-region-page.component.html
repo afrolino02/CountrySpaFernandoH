@@ -1,0 +1,21 @@
+<h2> Por Region</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    
+    <!-- search box -->
+    <shared-search-box (onValue)="searchRegion($event) " placeholder="Buscar por capital"></shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col" *ngFor="let country of region">
+   
+    <country-table [countries]="region"></country-table>
+        
+
+  </div>    
+</div>
+
+
